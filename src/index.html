@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  
+  <!------- font Awesome CDN ----------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="m-0 p-0 font-custom">
+
+
+  <!------- hero Section -------->
+  <section 
+    class="relative h-screen w-full bg-cover bg-center text-white"
+    style="background-image: url('./img/photograph-bg.jpg');"
+    >
+    <nav class="absolute top-0 w-full flex items-center justify-between px-10 py-5 z-10">
+      <!-- Logo -->
+      <div class="">
+        <img src="./img/np-logo.png" alt="" class="h-14">
+      </div>
+
+      <!-- Menu -->
+      <ul class="hidden md:flex space-x-6 text-sm">
+        <li class="hover:text-red-600 transition-colors duration-500"><a href="">Home</a></li>
+        <li class="hover:text-red-600 transition-colors duration-500"><a href="">ABOUT US</a></li>
+        <li class="hover:text-red-600 transition-colors duration-500"><a href="">BLOG</a></li>
+        <li class="hover:text-red-600 transition-colors duration-500"><a href="">CONTACT</a></li>
+        <li class="hover:text-red-600 transition-colors duration-500"><a href="">PLUS DEMO</a></li>
+      </ul>
+
+      <!------ Hamburger Icon ------>
+      <div class="md:hidden z-20">
+        <button id="menu-btn" class="text-white text-3xl focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+
+      <!-- Mobile Menu Panel -->
+      <div id="mobile-menu" class="fixed top-0 left-0 h-full w-3/4 sm:w-1/2 bg-white text-black z-400 transform -translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="flex justify-between items-center px-5 py-4 border-b border-gray-200">
+          <img src="./img/np-logo-phn.png" alt="Logo" class="h-12">
+          <button id="menu-close" class="text-red-600 text-3xl">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <ul class="space-y-6 p-6 text-lg font-semibold">
+          <li><a href="#" class="hover:text-red-600">Home</a></li>
+          <li><a href="#" class="hover:text-red-600">Blog</a></li>
+          <li><a href="#" class="hover:text-red-600">About Us</a></li>
+          <li><a href="#" class="hover:text-red-600">Html Styling</a></li>
+          <li><a href="#" class="hover:text-red-600">Gallery</a></li>
+          <li><a href="#" class="hover:text-red-600">Contact</a></li>
+        </ul>
+
+        <div class="flex justify-center space-x-4 mt-10">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a href="#"><i class="fab fa-dribbble"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+
+      <!-- Icons -->
+      <div class="hidden md:flex space-x-4 items-center">
+        <button 
+        class="bg-red-600 px-3 py-2 rounded-md text-sm font-semibold text-white
+        border border-transparent
+        hover:bg-transparent hover:text-red-600 hover:border-red-600
+        transition-all duration-500
+        focus:outline-none focus:ring-0">Download CV
+        </button>
+      </div>
+    </nav>
+
+    <div class="absolute left-4 top-1/2 transform -translate-y-1/2 space-y-4">
+      <a href="" class="w-10 h-10 border border-white rounded-full flex items-center justify-center transition-colors duration-500 hover:bg-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="" class="w-10 h-10 border border-white rounded-full flex items-center justify-center transition-colors duration-500 hover:bg-facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="" class="w-10 h-10 border border-white rounded-full flex items-center justify-center transition-colors duration-500 hover:bg-instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="" class="w-10 h-10 border border-white rounded-full flex items-center justify-center transition-colors duration-500 hover:bg-pintarest"><i class="fa-brands fa-pinterest-p"></i></a>
+    </div>
+
+    <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10">
+      <div class="space-y-1 animate-bounce">
+        <div class="w-4 h-4 border-b-2 border-r-2 transform rotate-45 mx-auto border-white"></div>
+        <div class="w-4 h-4 border-b-2 border-r-2 transform rotate-45 mx-auto border-white"></div>
+      </div>
+    </div>
+  </section>
+  <!------- hero Section -------->
+
+
+  <!-- font Awesome CDN JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

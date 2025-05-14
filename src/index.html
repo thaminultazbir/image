@@ -58,6 +58,15 @@
           <li><a href="#" class="hover:text-red-600">Html Styling</a></li>
           <li><a href="#" class="hover:text-red-600">Gallery</a></li>
           <li><a href="#" class="hover:text-red-600">Contact</a></li>
+          <li>
+            <button 
+              class="bg-red-600 px-3 py-2 rounded-md text-sm font-semibold text-white
+              border border-transparent
+              hover:bg-transparent hover:text-red-600 hover:border-red-600
+              transition-all duration-500
+              focus:outline-none focus:ring-0">Download CV
+            </button>
+          </li>
         </ul>
 
         <div class="flex justify-center space-x-4 mt-10">
@@ -99,6 +108,53 @@
   </section>
   <!------- hero Section -------->
 
+
+  <section class="py-12 text-center">
+  <h2 class="text-3xl font-bold mb-6">CREATIVE GALLERY</h2>
+
+  <!-- Filter Buttons -->
+  <div class="flex justify-center gap-6 mb-10">
+    <button class="filter-btn text-gray-500 hover:text-black font-medium active" data-filter="all">All</button>
+    <button class="filter-btn text-gray-500 hover:text-black font-medium" data-filter="fashion">Fashion</button>
+    <button class="filter-btn text-gray-500 hover:text-black font-medium" data-filter="lifestyle">Lifestyle</button>
+    <button class="filter-btn text-gray-500 hover:text-black font-medium" data-filter="nature">Nature</button>
+    <button class="filter-btn text-gray-500 hover:text-black font-medium" data-filter="portraits">Portraits</button>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6">
+    <div class="gallery-item fashion transition-opacity duration-500 ease-in-out opacity-100">
+      <img src="./img/fashion-1.jpg" alt="Fashion" class="rounded-lg w-full">
+    </div>
+    <div class="gallery-item lifestyle transition-opacity duration-500 ease-in-out opacity-100">
+      <img src="./img/lifestyle-1.jpg" alt="Lifestyle" class="rounded-lg w-full">
+    </div>
+    <div class="gallery-item portraits transition-opacity duration-500 ease-in-out opacity-100">
+      <img src="./img/Portraits-1.jpg" alt="Portrait" class="rounded-lg w-full">
+    </div>
+    <div class="gallery-item nature transition-opacity duration-500 ease-in-out opacity-100">
+      <img src="./img/nature-1.JPG" alt="Nature" class="rounded-lg w-full">
+    </div>
+    <!-- <div class="gallery-item fashion transition-opacity duration-500 ease-in-out opacity-100">
+      <img src="images/fashion2.jpg" alt="Fashion" class="rounded-lg w-full">
+    </div> -->
+
+    <div class="gallery-item fashion transition-opacity duration-500 ease-in-out opacity-100">
+      <img src="./img/fashion-2.jpg" alt="Fashion" class="rounded-lg w-full">
+    </div>
+    <div class="gallery-item lifestyle transition-opacity duration-500 ease-in-out opacity-100">
+      <img src="./img/lifestyle-2.jpg" alt="Lifestyle" class="rounded-lg w-full">
+    </div>
+    <div class="gallery-item portraits transition-opacity duration-500 ease-in-out opacity-100">
+      <img src="./img/Portraits-2.jpg" alt="Portrait" class="rounded-lg w-full">
+    </div>
+    <div class="gallery-item nature transition-opacity duration-500 ease-in-out opacity-100">
+      <img src="./img/nature-2.JPG" alt="Nature" class="rounded-lg w-full">
+    </div>
+    <!-- Add more items... -->
+  </div>
+</section>
+    
 
   <!-- font Awesome CDN JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

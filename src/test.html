@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horizontal Masonry Gallery</title>
+  <!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs-masonry@latest/dist/index.min.js"></script> -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Allow masonry items to stay in their natural height */
+    .horizontal-masonry {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+      width: 100vw;
+    }
+    .masonry-column {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  </style>
+</head>
+<body class="">
+    <div class="p-2 bg-gray-900 min-h-screen text-white">
+        <div class="grid grid-cols-2 gap-2">
+          <!-- Column 1 -->
+          <div class="flex flex-col gap-2">
+            <img src="/path/to/image1.jpg" alt="DJ" class="rounded-lg object-cover" />
+            <img src="/path/to/image2.jpg" alt="Sparklers" class="rounded-lg object-cover" />
+            <img src="/path/to/image3.jpg" alt="Laser show" class="rounded-lg object-cover" />
+          </div>
+      
+          <!-- Column 2 -->
+          <div class="flex flex-col gap-2">
+            <img src="/path/to/image4.jpg" alt="Crowd" class="rounded-lg object-cover" />
+            <img src="/path/to/image5.jpg" alt="Bike racks" class="rounded-lg object-cover" />
+            <img src="/path/to/image6.jpg" alt="Desert" class="rounded-lg object-cover" />
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>

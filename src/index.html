@@ -113,47 +113,39 @@
   <h2 class="text-3xl font-bold mb-6">CREATIVE GALLERY</h2>
 
   <!-- Filter Buttons -->
-  <div class="flex justify-center gap-6 mb-10">
-    <button class="filter-btn text-gray-500 hover:text-black font-medium active" data-filter="all">All</button>
-    <button class="filter-btn text-gray-500 hover:text-black font-medium" data-filter="fashion">Fashion</button>
-    <button class="filter-btn text-gray-500 hover:text-black font-medium" data-filter="lifestyle">Lifestyle</button>
-    <button class="filter-btn text-gray-500 hover:text-black font-medium" data-filter="nature">Nature</button>
-    <button class="filter-btn text-gray-500 hover:text-black font-medium" data-filter="portraits">Portraits</button>
+   <div class="filters flex gap-4 justify-center my-6">
+    <button onclick="filterGallery('all')" class="btn">All</button>
+    <button onclick="filterGallery('fashion')" class="btn">Fashion</button>
+    <button onclick="filterGallery('lifestyle')" class="btn">Lifestyle</button>
+    <button onclick="filterGallery('nature')" class="btn">Nature</button>
   </div>
 
-  <!-- Gallery Grid -->
-  <div class="gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6">
-    <div class="gallery-item fashion transition-opacity duration-500 ease-in-out opacity-100">
-      <img src="./img/fashion-1.jpg" alt="Fashion" class="rounded-lg w-full">
-    </div>
-    <div class="gallery-item lifestyle transition-opacity duration-500 ease-in-out opacity-100">
-      <img src="./img/lifestyle-1.jpg" alt="Lifestyle" class="rounded-lg w-full">
-    </div>
-    <div class="gallery-item portraits transition-opacity duration-500 ease-in-out opacity-100">
-      <img src="./img/Portraits-1.jpg" alt="Portrait" class="rounded-lg w-full">
-    </div>
-    <div class="gallery-item nature transition-opacity duration-500 ease-in-out opacity-100">
-      <img src="./img/nature-1.JPG" alt="Nature" class="rounded-lg w-full">
-    </div>
-    <!-- <div class="gallery-item fashion transition-opacity duration-500 ease-in-out opacity-100">
-      <img src="images/fashion2.jpg" alt="Fashion" class="rounded-lg w-full">
-    </div> -->
+  <div class="masonry">
+    <div class="item fashion"><img src="./img/fashion-1.jpg" alt="Fashion"></div>
+    <div class="item lifestyle"><img src="./img/lifestyle-1.jpg" alt="Lifestyle"></div>
+    <div class="item nature"><img src="./img/nature-1.JPG" alt="Nature"></div>
+    <div class="item fashion"><img src="./img/fashion-2.jpg" alt="Fashion"></div>
+    <div class="item lifestyle"><img src="./img/lifestyle-1.jpg" alt="Lifestyle"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <div class="item nature"><img src="./img/nature-2.jpg" alt="Nature"></div>
+    <!-- Add more images -->
+  </div> 
 
-    <div class="gallery-item fashion transition-opacity duration-500 ease-in-out opacity-100">
-      <img src="./img/fashion-2.jpg" alt="Fashion" class="rounded-lg w-full">
-    </div>
-    <div class="gallery-item lifestyle transition-opacity duration-500 ease-in-out opacity-100">
-      <img src="./img/lifestyle-2.jpg" alt="Lifestyle" class="rounded-lg w-full">
-    </div>
-    <div class="gallery-item portraits transition-opacity duration-500 ease-in-out opacity-100">
-      <img src="./img/Portraits-2.jpg" alt="Portrait" class="rounded-lg w-full">
-    </div>
-    <div class="gallery-item nature transition-opacity duration-500 ease-in-out opacity-100">
-      <img src="./img/nature-2.JPG" alt="Nature" class="rounded-lg w-full">
-    </div>
-    <!-- Add more items... -->
-  </div>
-</section>
+  </section>
     
 
   <!-- font Awesome CDN JS -->
